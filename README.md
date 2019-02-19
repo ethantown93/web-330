@@ -1,2 +1,2 @@
 # web-330
-This is my repository for WEB-230, Enterprise Javascript 2.
+ Enterprise JavaScript #contributors Professor Krasso - Bellevue University Ethan Everett Townsend - Bellevue University
