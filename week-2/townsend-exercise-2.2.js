@@ -14,20 +14,9 @@ console.log('\n');
 ;===========================================
 */
 
-/*
- Expected output:
-
- FirstName LastName
- Exercise 2.2 - Prototypes
- February 26, 2019
-
- The person's full name is '<fullname>.'
- The person's age is '<age>.'
-
-*/
-
 // start program
 
+// creating my object literal which will return my age
 var person = {
     
     getAge: function() {
@@ -35,6 +24,7 @@ var person = {
     }
 }
 
+// creating my new object literal which defines my full name and age
 var ethan = Object.create(person, {
     
     "age":{
@@ -46,8 +36,10 @@ var ethan = Object.create(person, {
     }
 });
 
+// calling my getAge function
 ethan.getAge();
 
+// outputting the results
 console.log('The person\s full name is ' + ethan.fullname);
 console.log('The person\s age is ' + ethan.age);
 
