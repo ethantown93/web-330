@@ -102,10 +102,10 @@ var informix = informixFactory.createDatabase({
 })
 
 // outputing the results of the informix and oracle functions
-console.log(informix);
-console.log(oracle);
+//console.log(informix);
+//console.log(oracle);
 
-
+console.log(informix + '\n' + 'Username: ' + informix.username + '\n' + 'Password: ' + informix.password + '\n' + 'Server: ' + informix.server);
 
 
 
