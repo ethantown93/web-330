@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercise 5.2 - The Proxy Pattern</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <!-- jquery Reference Library -->
+    <script
+      type="text/javascript"
+      src="https://gc.kis.v2.scr.kaspersky-labs.com/5DACB2B0-5003-6543-8B39-D8EE6E4FC44C/main.js"
+      charset="UTF-8"
+    ></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  
+  <body>
+
+    <nav class = 'navbar navbar-dark bg-dark'>
+        <a href='#' class = 'navbar-brand'>Home</a>
+    </nav>
+
+    <br><br>
+
+    <div class='container'>
+        <div class='row'>
+            <div class='col-md-12'>
+                    <h2>Exercise 5.2 - Proxy Example</h2>
+
+                    <button id='btn-1'>Show</button>
+        
+                    <br><span id='proxy'></span>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+    $(function() {
+        var dog = {
+            breed: 'German Shephard',
+            age: 3,
+            weight: '60 lbs',
+            display: function() {
+                $('#proxy').html('');
+                $('#proxy').append('<br> Breed: ' + this.breed + '<br>Age: ' + this.age + '<br>Weight: ' + this.weight);
+            }
+        };
+
+        $('#btn-1').click($.proxy(dog, 'display'));
+    });
+
+    </script>
+
+
+  </body>
+</html>
